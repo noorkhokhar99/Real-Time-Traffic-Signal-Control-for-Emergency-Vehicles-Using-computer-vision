@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Traffic </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Smart Traffic</h1>
+    </header>
+    <main>
+        <div class="content">
+            <img width=720 src="{{ url_for('video_feed', video_path=video_path) }}" alt="Processed Frame">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Pyresearch | All rights reserved</p>
+    </footer>
+</body>
+</html>
